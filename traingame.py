@@ -136,7 +136,7 @@ while operands[1] < 4:
             res3 = subtract(numberList[0],res1)
         if operands[0] == 2:
             res3 = multiply(numberList[0],res1)
-        if operands[0] == 3 and res2 != 0:
+        if operands[0] == 3 and res1 != 0:
             res3 = divide(numberList[0],res1)
 
         operands[2] = 0
@@ -148,7 +148,7 @@ while operands[1] < 4:
                 res2 = subtract(res3, numberList[3])
             if operands[2] == 2:
                 res2 = multiply(res3, numberList[3])
-            if operands[2] == 3 and res3 != 0:
+            if operands[2] == 3 and numberList[3] != 0:
                 res2 = divide(res3, numberList[3])
             if res2 == 10:
                 print(numberList[0] , operandToString(operands[0]) , '(' , numberList[1] , operandToString(operands[1]) , numberList[2] , ')' , operandToString(operands[2]) , numberList[3])
@@ -232,7 +232,7 @@ while operands[2] < 4:
                 res3 = subtract(numberList[0], res2)
             if operands[0] == 2:
                 res3 = multiply(numberList[0], res2)
-            if operands[0] == 3 and res3 != 0:
+            if operands[0] == 3 and res2 != 0:
                 res3 = divide(numberList[0], res2)
             if res3 == 10:
                 print(numberList[0] , operandToString(operands[0]) , '(' , numberList[1] , operandToString(operands[1]) , '(' , numberList[2] , operandToString(operands[2]) , numberList[3], ')' , ')')
